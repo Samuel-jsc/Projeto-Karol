@@ -162,7 +162,7 @@
     fullHD 1920x1080 
     celular 360x780
     Tablet 768x1024 **/
-    @media only screen and (max-width:360px) {
+    @media only screen and (max-width:480px) {
         .titulo {
             font-size: 200%;
             margin: -19% 0% -5% -18%;
