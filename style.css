@@ -16,6 +16,9 @@ a {
  img {
     width: 80%;
  }
+ .conteiner {
+    margin: 0% 0% 0% 0% ;
+ }
 
 .titulo {
 
@@ -45,10 +48,10 @@ body{
     background-color: #dfb2a9;
 }
 .dimensao {
-    width: 100%;
-    margin: 0% 10%;
+    width: 93%;
+    margin: 0% 0% 0% 3%;
     background-image: url(img/fundo\ 2.jpg);
-    background-size:100% 100%;
+    background-size: 100% 100%;
     
     
 }
@@ -103,7 +106,7 @@ thead {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    margin: 0% 5%;
+    margin: 0% 15%;
 }
 .conteinerfotos {
     padding-top: 20px;
@@ -141,15 +144,15 @@ footer {
 .textocont  {
     margin-bottom: 66px;
     position: relative;
-    right: 96%;
-    bottom: 65%;
+    right: 72%;
+    bottom: 110%;
 }
 
 .final {
     font-size: 28px;
     position: relative;
-    right: 100%;
-    bottom: 60%;
+    right: 92%;
+    bottom: 95%;
     gap: 100px;
     display: flex;
     align-items: baseline;
@@ -161,22 +164,27 @@ footer {
     bottom: -13%;
     right: 0%;
 }
+.textolocal{
+    font-size: 270%;
+}
 .localizacao {
     font-size: 70%;
     font-size: 70%;
     position: relative;
     bottom: 33%;
-    left: 45%;
+    left: 58%;
 }
 /** Responsividades 
 fullHD 1920x1080 
 celular 360x780
 Tablet 768x1024 **/
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:740px) {
+    
     .titulo{
         margin: 25% 0% 0% 40%;
         width: 120%;
     }
+
     .navegacao {
         font-size: 150%;
         margin: 0% -98% -4% 17%;
@@ -200,7 +208,7 @@ Tablet 768x1024 **/
     .textodoperfil {
         font-size: 38px;
         position: relative;
-        left: 239px;
+        left: 267px;
          width: 40%;
     }
     .textocont {
@@ -217,7 +225,8 @@ Tablet 768x1024 **/
     }
     .final {
         position: relative;
-        right: 79%;
+        right: 86%;
+        bottom: 58%;
     }
     .localizacao {
         position: relative;
