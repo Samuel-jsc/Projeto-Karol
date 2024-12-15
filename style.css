@@ -16,16 +16,14 @@ a {
  img {
     width: 80%;
  }
- .conteiner {
-    margin: 0% 0% 0% 0% ;
- }
+
 
 .titulo {
 
     color: #4c4c4b ;
     background-color:#e89b93 ;
     text-align: center;
-    width: 100%;
+    width: 110%;
     height: 150px;
     font-size: 80px;
     display: flex;
@@ -33,15 +31,15 @@ a {
     justify-content: center;
 }
 .navegacao {
-    
+    width: 110%;
     border-top: 2px solid rgb(252, 252, 252);
-    padding: 10px 30px; 
+    padding: 10px 5px;
     background-color: #e89b93;
     font-size: 30px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 body{
     
@@ -77,27 +75,7 @@ p, h1, h2 , span, li, td , tr{
     left: 225px;
     width: 51%;
 }
-section {
-    margin: 0px 10px;
-}
 
-.tabela {
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-
-}
-thead {
-    font-size: 60px;
-    text-align: center;
-}
-
-.especialidades{
-    font-size: 65px;
-    position: relative;
-    left: 300px;
-}
 #textoespaco {
     margin: 6% 0%;
 }
@@ -181,13 +159,18 @@ Tablet 768x1024 **/
 @media only screen and (max-width:740px) {
     
     .titulo{
-        margin: 25% 0% 0% 40%;
+        margin: -14% 0% 0% 40%;
         width: 120%;
+        background: none;
     }
 
     .navegacao {
+        width: 175%;
+        border-top: 4px solid rgb(252, 252, 252);
+        gap: 6%;
         font-size: 150%;
         margin: 0% -98% -4% 17%;
+        background: none;
     }
     header {
         margin: 6% 0% 0% -38%;
@@ -210,6 +193,10 @@ Tablet 768x1024 **/
         position: relative;
         left: 267px;
          width: 40%;
+    }
+    #textoespaco{
+        width: 60%;
+        margin: 6% 0%;  
     }
     .textocont {
         right: 70%;
