@@ -8,13 +8,13 @@
    
 }
 *{
-    width: 100%;
+    width: 100vh;
     
 }
 @media screen and (max-width: 768px){
     main {
         text-align: center;
-        width: 57vh;
+        width: 57vw;
         height: 13vh;
         
     }
@@ -22,7 +22,7 @@
         color: var(--texto);
         text-align: center;
         background-color:var(--titulo);
-        height: 10vh;
+        height: 10vw;
         display: flex;
         align-items: center;
         border: 1px solid black;
@@ -31,7 +31,7 @@
         
         display: flex;
         margin: auto;
-        width: 55vh;
+        width: 55vw;
         height: auto;
     }
     a {
@@ -39,12 +39,12 @@
         text-decoration: none;
     }
     .perfil {
-        width: 30vh;
+        width: 30vw;
     }
     header {
         display: flex;
         flex-direction: column;
-        width: 57vh;
+        width: 57vw;
         height: 57vh;
         background: var(--artigos);
         align-items: center;
@@ -61,7 +61,7 @@
     }
     .contato{
         text-align: center; 
-        width: 57vh;
+        width: 57vw;
 
     }
     a > img {
@@ -73,7 +73,7 @@
     }
     iframe {
         height: 40vh;
-        width: 40vh;
+        width: 40vw;
     }
     
 
