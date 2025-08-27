@@ -1,263 +1,86 @@
 :root {
-    --titulos: color:#e89b93 ;
-    --artigos: color: #b78e80 ;
-    --texto: color: #4c4c4b ;
-    --fundo:color: #dfb2a9 ;
-    }
-    * {
-        margin: 0%;
-        padding: 0%;
-    }
-    a {
-        text-decoration: none;
-        color: #4c4c4b ;   
-    }
-     
-     img {
-        width: 76%;
-     }
-    
-    
-    .titulo {
-    color: #4c4c4b;
-    background-color: #e89b93;
-    text-align: center;
-    width: 100%;
-    height: 150px;
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   --fundo: #BF0404;
+   --contato: #856e6a;
+   --sessao:#F2D1CE;
+   --artigos:#F2ADA7;
+   --titulo:#F29B9B;
+   --texto:#594D4D;
+   
 }
-    .navegacao {
-        width: 110%;
-        border-top: 2px solid rgb(252, 252, 252);
-        padding: 10px 5px;
-        background-color: #e89b93;
-        font-size: 30px;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    body{
-        
-        background-color: #dfb2a9;
-    }
-    .dimensao {
-        width: 88%;
-        margin: 0% 0% 0% 3%;
-        background-image: url(img/fundo\ 2.jpg);
-        background-size: 100% 100%;
-        
+*{
+    width: 100%;
+    
+}
+@media screen and (max-width: 768px){
+    main {
+        text-align: center;
+        width: 57vh;
+        height: 13vh;
         
     }
-    header { 
-        
+    .titulo {
+        color: var(--texto);
+        text-align: center;
+        background-color:var(--titulo);
+        height: 10vh;
         display: flex;
         align-items: center;
-        margin: 0% 0%;
+        border: 1px solid black;
     }
-    .perfil {
-        margin: 20% 80%;
-        max-width: 300px;
-        max-height: 275px;
-        width: auto;
+    .navegacao {
+        
+        display: flex;
+        margin: auto;
+        width: 55vh;
         height: auto;
     }
-    p, h1, h2 , span, li, td , tr{
-        color: #4c4c4b;
+    a {
+        color: var(--texto);
+        text-decoration: none;
+    }
+    .perfil {
+        width: 30vh;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 57vh;
+        height: 57vh;
+        background: var(--artigos);
+        align-items: center;
+        justify-content: center;
     }
     .textodoperfil {
-        font-size: 35px;
-        position: relative;
-        left: 225px;
-        width: 51%;
-    }
-    
-    #textoespaco {
-        margin: 6% 0%;
-    }
-    .trabalhos {
-        padding-bottom: 100px;
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        margin: 0% 15%;
-    }
-    .conteinerfotos {
-        padding-top: 20px;
-        padding-bottom: 36px;
-        font-size: 40px;
-        display: flex;
-        justify-content: space-around;
-    }
-    .fotos {
-        width: 35%;
-        height: 15%;
-        -moz-transition: all 0.5s;  
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-    }
-    .fotos:hover {
-        -moz-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    footer {
-        height: 500px;
+        color: var(--texto);
         
-        display: flex;
-        align-items: center;
-        margin: 0% 10%;
+        width: 65%;
     }
-    .contato {
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        flex-direction: row-reverse;
-    
+    .textocont{
+        color: var(--texto);  
+        text-align: center; 
     }
-    .whats{
-        width: 200%;
-    }
-    .insta{
-        width: 350%;
-    }
-    
-    .textocont  {
-    margin-bottom: 66px;
-    position: relative;
-    right: 193%;
-    bottom: 110%;
-    }
-            .final {
-                width: 100%;
-                font-size: 32px;
-                position: relative;
-                right: 214%;
-                bottom: 95%;
-                gap: 200px;
-                display: flex ;
-                align-items: center;
-                text-align: center;
-                text-align: justify;
-            }
-    .mapinha{
-        position: relative;
-        bottom: -13%;
-        right: 17%;
-    }
-    .textolocal{
-        font-size: 270%;
-    }
-    .localizacao {
-        font-size: 70%;
-        font-size: 70%;
-        position: relative;
-        bottom: 33%;
-        left: 34%;
-    }
-    /** Responsividades 
-    fullHD 1920x1080 
-    celular 360x780
-    Tablet 768x1024 **/
-    @media only screen and (max-width:480px) {
-        .titulo {
-            font-size: 200%;
-            margin: -19% 0% -5% -18%;
-            width: 100%;
-            background: none;
-        }
-        .navegacao {
-            width: 53%;
-            border-top: 11px solid rgb(252, 252, 252);
-            gap: 1%;
-            font-size: 80%;
-            margin: -10% 0% -9% 7%;
-            background: none;
-        }   
-    }
-    @media only screen and (max-width:768px) {
-        .titulo {
-            color: #4c4c4b;
-            background-color: #e89b93;
-            text-align: center;
-            width: 100%;
-            height: 150px;
-            font-size: 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-            .navegacao {
-                width: 100%;
-                border-top: 2px solid rgb(252, 252, 252);
-                padding: 10px 5px;
-                background-color: #e89b93;
-                font-size: 30px;
-                display: flex;
-                flex-wrap: nowrap;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
-            .perfil {
-                margin: 20% 20%;
+    .contato{
+        text-align: center; 
+        width: 57vh;
 
     }
-            .textodoperfil {
-                font-size: 35px;
-                position: relative;
-                left: 97px;
-                width: 48%;
-            }
-                .trabalhos {
-                    padding-bottom: 100px;
-                    display: flex;
-                    width: 92%;
-                    justify-content: space-evenly;
-                    margin: 0% 15%;
-                    align-items: stretch; 
-} 
-                .textocont {
-                    margin-bottom: 66px;
-                    position: relative;
-                    right: 164%;
-                    bottom: 46%;
-                 }
-                 .final {
-                    width: 127%;
-                    font-size: 30px;
-                    position: relative;
-                    right: 164%;
-                    bottom: 50%;
-                    gap: 100px;
-                    display: flex;
-                    text-align: center;
-                    text-align: justify;
-                    align-items: center;
-                }
-                .insta {
-                    width: 265%;
-                }
-                .whats {
-                    width: 147%;
-                }
-                .localizacao {
-                    font-size: 70%;
-                    font-size: 70%;
-                    position: relative;
-                    bottom: 33%;
-                    left: 40%;
-                }
-                .mapinha {
-                    border: 2px solid pink;
-                    position: relative;
-                    bottom: -13%;
-                    right: 10%;
-                }
-            }
+    a > img {
+         width: 20%;
+    }
+    h1 {
+        text-align: center;
+        color: var(--texto);
+    }
+    iframe {
+        height: 40vh;
+        width: 40vh;
+    }
+    
 
+
+}
+
+    
 
 
 
