@@ -28,14 +28,24 @@ a {
 }
 
 main {
+    padding: 1% 0% 0% 1%;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80%;
     max-height: 1200px;
+    background-color: white;
+    margin: 3%;
+    border-radius: 3%; 
 }
 section {
     display: flex;
+    padding-bottom: 3%;
+}
+article {
+    background-color: white;
+    border-radius: 3%;
+    
 }
 .foto-texto{
     display: flex;
@@ -47,6 +57,7 @@ section {
      height: 40vh;
      object-fit: cover;
      border-radius: 8px;
+     
 }
 .boas-vindas {
     display: flex;
@@ -87,6 +98,8 @@ footer{
     flex-direction: column;
     background-color: white;
     border-radius: 3%;
+    margin-top: 3%
+   
 }
 
 footer div img {
@@ -132,6 +145,17 @@ footer h1 {
 }
 
 @media (max-width: 768px){
+
+    article {
+    background-color: white;
+    border-radius: 0%;
+    padding: 3%;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    }
+    
    .foto-texto {
     flex-direction: column;
     text-align: center;
@@ -174,5 +198,8 @@ footer h1 {
 
    .estrelas-conteiner {
     justify-content: center;
+   }
+   footer{ 
+    border-radius: 0%;
    }
 }
