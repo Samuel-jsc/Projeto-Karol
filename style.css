@@ -7,6 +7,19 @@ body {
     align-items: center;
     color:#f5f5f5;
 }
+
+.Topo {
+z-index: 1001;
+  width: 98%;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: flex-end; /* joga para o canto direito */
+  font-size: 0.9rem;
+  color: #ddd;
+  background-color: #111;
+  gap: 2%;
+}
+
 .whatsapp {
    position: fixed;
    bottom: 20px;
@@ -29,15 +42,19 @@ body {
 }
 
 header {
-    width: 100%;
+    
+    position: fixed;   
+    top: 0;            
+    left: 0;           
+    width: 100%;       
+    z-index: 1000;
     background-color: #222;
-    margin-bottom: 40px;
-    padding: 0 40px;
+    
     
 }
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px 60px;
 }
@@ -92,10 +109,11 @@ main {
     width: 80%;
     max-height: 1200px;
     background-color: #1e1e1e;
-    margin: 40px auto ;
+    margin: 10px auto ;
     border-radius: 3%; 
 }
 section {
+    margin-top: 8%;
     display: flex;
     padding-bottom: 3%;
     background-color: #2a2a2a;
@@ -105,6 +123,47 @@ article {
     border-radius: 3%;
     
     
+}
+.agendamento{
+    display: flex;
+    padding: 3%;
+    font-size: 99%;
+    height: auto;
+    width: 55%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    
+}
+.agendar {
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 120px; /* cantos levemente arredondados */
+  box-shadow: 0 2px 20px;
+  background-color: #ff4081; /* cor inicial */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size:200% ;
+
+  /* animação */
+  animation: piscar 1s infinite alternate;
+}
+
+@keyframes piscar {
+  from {
+    background-color: #ff4081; /* rosa */
+    box-shadow: 0 0 10px #ff4081;
+  }
+  to {
+    background-color: #ff80ab; /* rosa mais claro */
+    box-shadow: 0 0 20px #ff80ab;
+  }
 }
 .foto-texto{
     display: flex;
@@ -209,6 +268,27 @@ footer h1 {
 /* CELULAR */
 
 @media (max-width: 768px){
+
+    main {
+        margin-top: 120px;
+    }
+    .Topo {
+        
+    position: static;   /* volta ao fluxo normal */
+    text-align: center;
+    margin-bottom: 10px;
+     padding: 10px 10px;
+    justify-content: center;
+    font-size: 13px;
+    color: #ddd;
+    background-color: #111;
+    gap: 2%;
+    }
+    .Topo span {
+        margin: 5px 0;
+        white-space: nowrap;
+       
+    }
     nav {
         flex-direction: column;
         gap: 20px;
@@ -239,9 +319,10 @@ footer h1 {
    }
    
    .foto-texto img {
+    margin-top: 45%;
     width: 100%;
     height: auto;
-    margin-bottom: 20%;
+    margin-bottom: 4%;
    }
 
    .boas-vindas, .boas-vindas h2 {
@@ -259,6 +340,11 @@ footer h1 {
 
    table img {
     height: 250px;
+   }
+
+   .agendar{
+    width: 90%;
+    font-size: 150%;
    }
 
    .depoimentos {
